@@ -6,16 +6,15 @@ export function middleware(request: NextRequest) {
   const origin = request.headers.get("origin") || "";
   const referer = request.headers.get("referer") || "";
 
-  const allowedHosts = [
-    "https://sortedof.kushinpi.me"
+  const allowedOrigins = [
+    "https://sortedof.kushinpi.me",
   ];
 
   const isApiCall = pathname.startsWith("/api/waitlist");
 
   const isFromAllowedOrigin = (url: string) => {
     try {
-      const hostname = new URL(url).host;
-      return allowedHosts.includes(hostname);
+      return allowedOrigins.includes(new URL(url).origin);
     } catch {
       return false;
     }
