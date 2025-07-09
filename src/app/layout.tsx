@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     siteName: "SortOf",
     images: [
       {
-        url: "/og-preview.png",
+        url: "/this.png",
         width: 1200,
         height: 630,
         alt: "SortOf Waitlist Preview",
