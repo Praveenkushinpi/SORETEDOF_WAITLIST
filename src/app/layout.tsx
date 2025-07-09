@@ -15,15 +15,15 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {   
   title: "SortOf – Waitlist",
   description: "Join the waitlist for the next-gen creative tools by SortOf Studio.",
-  metadataBase: new URL("https://yourproject.vercel.app"),
+  metadataBase: new URL("https://sortedof.kushinpi.me"),
   openGraph: {
     title: "Join the SortOf Waitlist",
     description: "Get early access to SortOf's tools for creators, builders, and dreamers.",
-    url: "https://yourproject.vercel.app",
+    url: "https://sortedof.kushinpi.me",
     siteName: "SortOf",
     images: [
       {
-        url: "/this.png",
+        url: "/og-preview.png",
         width: 1200,
         height: 630,
         alt: "SortOf Waitlist Preview",
