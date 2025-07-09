@@ -7,9 +7,7 @@ export function middleware(request: NextRequest) {
   const referer = request.headers.get("referer") || "";
 
   const allowedHosts = [
-    "localhost:3000",
-    "yourdomain.com", 
-    "www.yourdomain.com"
+    "https://sortedof.kushinpi.me/"
   ];
 
   const isApiCall = pathname.startsWith("/api/waitlist");
