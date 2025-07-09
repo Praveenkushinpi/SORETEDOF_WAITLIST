@@ -1,4 +1,3 @@
-// middleware.ts
 import { NextResponse } from "next/server";
 import type { NextRequest } from "next/server";
 
@@ -9,7 +8,7 @@ export function middleware(request: NextRequest) {
 
   const allowedHosts = [
     "localhost:3000",
-    "yourdomain.com", // ✅ Add your real domain here
+    "yourdomain.com", 
     "www.yourdomain.com"
   ];
 

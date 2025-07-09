@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import { Menu, X, Home, Users, Zap, ExternalLink } from 'lucide-react';
 import Link from 'next/link';
-import CircularText from './ui/circulartext';
+
 
 const CircularNavbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -15,7 +15,6 @@ const CircularNavbar = () => {
 
   return (
     <div className="relative">
-      {/* Circular text animation */}
       <div className="absolute top-0 left-0 w-full h-full flex items-center justify-center pointer-events-none">
         
       </div>
@@ -40,12 +39,7 @@ const CircularNavbar = () => {
             : 'opacity-0 transform -translate-y-4 scale-95 pointer-events-none'
         }`}
       >
-        <CircularText
-          text="Explore the Future"
-          className={`text-gray-500 text-sm ${
-            isOpen ? 'animate-slide-in' : ''
-          }`}
-        />
+
         <div className="bg-white shadow-2xl rounded-2xl border border-gray-200 p-2 min-w-48">
           {/* Home */}
           <div onClick={() => setIsOpen(false)}>

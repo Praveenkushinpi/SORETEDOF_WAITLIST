@@ -18,7 +18,7 @@ export default function Footer() {
             <li>Turn notes into flashcards with one tap</li>
             <li>Understand math, science, or code using AI</li>
             <li>Spaced repetition to enhance long-term memory</li>
-            <li>Works offline, syncs when you're ready</li>
+            <li>Works offline, syncs when you&apos;re ready</li>
           </ul>
         </div>
 

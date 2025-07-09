@@ -7,10 +7,10 @@ const CustomCursor = () => {
   const [isClicking, setIsClicking] = useState(false);
   const [cursorVariant, setCursorVariant] = useState('default');
 
-  useEffect(() => {
-    const updateMousePosition = (e: { clientX: any; clientY: any; }) => {
-      setMousePosition({ x: e.clientX, y: e.clientY });
-    };
+useEffect(() => {
+  const updateMousePosition = (e: MouseEvent) => {
+    setMousePosition({ x: e.clientX, y: e.clientY });
+  };
 
     const handleMouseDown = () => setIsClicking(true);
     const handleMouseUp = () => setIsClicking(false);
@@ -33,7 +33,6 @@ const CustomCursor = () => {
       });
     };
 
-    // Add listeners for text selection
     const addTextListeners = () => {
       const textElements = document.querySelectorAll('p, h1, h2, h3, h4, h5, h6, span, div');
       
@@ -51,7 +50,6 @@ const CustomCursor = () => {
     document.addEventListener('mousedown', handleMouseDown);
     document.addEventListener('mouseup', handleMouseUp);
     
-    // Add listeners after a short delay to ensure DOM is ready
     setTimeout(() => {
       addHoverListeners();
       addTextListeners();

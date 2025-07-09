@@ -1,5 +1,6 @@
 import Navigation from "@/components/navigation"
 import CustomCursor from "@/components/customcursor";
+import Image from "next/image";
 const features = [
   {
     title: "Notes That Think",
@@ -62,7 +63,7 @@ export default function FeaturesSection() {
 
               {/* Image */}
               <div className="w-full md:w-1/2">
-                <img
+                <Image
                   src={feature.image}
                   alt={feature.title}
                   className="w-full h-[280px] md:h-[320px] object-cover rounded-2xl shadow-md"

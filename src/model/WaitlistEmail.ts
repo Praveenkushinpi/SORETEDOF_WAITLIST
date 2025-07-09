@@ -1,6 +1,6 @@
 import mongoose from "mongoose";
 import { Schema, Document } from "mongoose";
-import { unique } from "next/dist/build/utils";
+
 
 export interface InWaitlistEmail extends Document {
     email: string;

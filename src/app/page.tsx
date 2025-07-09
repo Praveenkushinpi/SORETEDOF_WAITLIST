@@ -236,11 +236,12 @@ export default function HomePage() {
             <div className="flex-1 pl-8">
               <ScrollAnimate>
                 <div className="aspect-[4/5] relative">
-                  <img
-                    src="img/people-1.png"
+                  <Image
+                    src="/img/people-1.png"
                     alt="Scattered Study Resources"
                     className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500"
-                  />
+                    width={400}
+                    height={300}                   />
                   <div className="absolute inset-0 border-4 border-white"></div>
                 </div>
               </ScrollAnimate>
@@ -301,10 +302,12 @@ export default function HomePage() {
             <div className="flex-1 pr-8">
               <ScrollAnimate>
                 <div className="aspect-[4/5] relative">
-                  <img
-                    src="img/people-4.png"
+                  <Image
+                    src="/img/people-4.png"
                     alt="Wasted Time Creating Flashcards"
                     className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500"
+                    width={400}
+                    height={300}  
                   />
                   <div className="absolute inset-0 border-4 border-white"></div>
                 </div>
@@ -330,7 +333,7 @@ export default function HomePage() {
                   <ScrollAnimate>
                     <h3 className="text-2xl font-bold text-white mb-4">PROBLEM</h3>
                     <p className="text-xl text-gray-200 font-medium leading-relaxed">
-                      Random or last-minute revision doesn't help long-term memory retention.
+                      Random or last-minute revision doesn&apos;t help long-term memory retention.
                     </p>
                   </ScrollAnimate>
                 </div>
@@ -366,10 +369,12 @@ export default function HomePage() {
             <div className="flex-1 pl-8">
               <ScrollAnimate>
                 <div className="aspect-[4/5] relative">
-                  <img
-                    src="img/people-2.png"
+                  <Image
+                    src="/img/people-2.png"
                     alt="Ineffective Revision"
                     className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500"
+                    width={400}
+                    height={300}  
                   />
                   <div className="absolute inset-0 border-4 border-white"></div>
                 </div>
@@ -431,10 +436,12 @@ export default function HomePage() {
             <div className="flex-1 pr-8">
               <ScrollAnimate>
                 <div className="aspect-[4/5] relative">
-                  <img
-                    src="img/people-5.png"
+                  <Image
+                    src="/img/people-5.png"
                     alt="Hard-to-Find Definitions and Concepts"
                     className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500"
+                    width={400}
+                    height={300}  
                   />
                   <div className="absolute inset-0 border-4 border-white"></div>
                 </div>
@@ -460,7 +467,7 @@ export default function HomePage() {
                   <ScrollAnimate>
                     <h3 className="text-2xl font-bold text-white mb-4">PROBLEM</h3>
                     <p className="text-xl text-gray-200 font-medium leading-relaxed">
-                      Students often don't know what to review or where to start studying from.
+                      Students often don&apos;t know what to review or where to start studying from.
                     </p>
                   </ScrollAnimate>
                 </div>
@@ -496,10 +503,12 @@ export default function HomePage() {
             <div className="flex-1 pl-8">
               <ScrollAnimate>
                 <div className="aspect-[4/5] relative">
-                  <img
-                    src="img/people-7.png"
+                  <Image
+                    src="/img/people-7.png"
                     alt="Lack of Structure and Focus"
                     className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500"
+                    width={400}
+                    height={300}  
                   />
                   <div className="absolute inset-0 border-4 border-white"></div>
                 </div>
@@ -532,7 +541,7 @@ export default function HomePage() {
             </Link>
           </div>
         </div>
-        <Footer />
+ <Footer />
       </div>
   </div>
     </div>

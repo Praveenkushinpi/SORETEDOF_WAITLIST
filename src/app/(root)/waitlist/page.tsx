@@ -59,7 +59,7 @@ export default function WaitlistPage() {
       const data = await res.json();
       setMessage(data.message || data.error);
       setSubmitted(true);
-    } catch (err) {
+    } catch  {
       setMessage("Something went wrong. Please try again.");
       setSubmitted(true);
     }

@@ -4,8 +4,8 @@ import { useEffect, useRef, useState, ReactNode } from 'react';
 
 interface ScrollAnimateProps {
   children: ReactNode;
-  className?: string; // animation class (e.g., 'animate-text-glitch')
-  threshold?: number; // how much of element should be visible to trigger
+  className?: string;    
+  threshold?: number;  
 }
 
 export default function ScrollAnimate({
@@ -24,10 +24,12 @@ export default function ScrollAnimate({
       { threshold }
     );
 
-    if (ref.current) observer.observe(ref.current);
+    const el = ref.current;            
+
+    if (el) observer.observe(el);
 
     return () => {
-      if (ref.current) observer.unobserve(ref.current);
+      if (el) observer.unobserve(el); 
     };
   }, [threshold]);
 
